@@ -17,8 +17,7 @@ export class ranksort implements PipeTransform {
         for(i = rank; i <= rank+5000; i++){
         
               return sort.FIELD3;
-        
-        
+           
         } 
         }
       })        
