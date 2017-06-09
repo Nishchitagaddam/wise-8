@@ -1,0 +1,19 @@
+
+<a [routerLink] = "['/addlisting']">Go back</a>
+<div class="container">
+
+
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+         <td>CollegeName</td>
+         <td>Review</td>
+      </tr>
+      
+       <tr *ngFor = "let review of reviews">
+        <td>{{review.college}}</td>
+        <td>{{review.review}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

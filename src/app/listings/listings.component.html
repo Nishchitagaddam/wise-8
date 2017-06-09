@@ -1,0 +1,21 @@
+<label><h5>Search By College Name <input type="text" [(ngModel)]="QueryString" id = "search"></h5></label>
+<label><h5>Search By Branch <input type="text" [(ngModel)]="QueryString1" id = "search1"></h5></label>   
+<label><h5>Search By Location<input type="text" [(ngModel)]="Querystring2" id = "search2"></h5></label>     
+<div class="container">
+             
+  <table class="table table-striped">
+   <tbody>
+      <tr>
+        <td>CollegeName</td>
+        <td>Branch</td>
+        <td> Address</td>
+      </tr>
+        
+		<tr *ngFor = "let list of (colleges|FilterPipe:QueryString|branchsort:QueryString1|addresspipe:Querystring2)" >
+			<td>{{list.FIELD1}}</td>
+			<td>{{list.FIELD2}}</td>
+			<td>{{list.FIELD19}}</td>
+     </tr>
+    </tbody>
+  </table>
+</div>               

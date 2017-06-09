@@ -1,0 +1,57 @@
+<h5 align = "center">Search By Rank <input type="text"  [(ngModel)]="Query" id = "search"></h5>
+   
+<div class="container">
+             
+  <table class="table table-striped">
+    
+    <tbody>
+      <tr>
+        <td>CollegeName</td>
+        <td>Branch</td>
+        <td> OC/B	</td>
+        <td> OC/G	</td>
+        <td> SC/B	</td>
+        <td> SC/G	</td>
+        <td> ST/B	</td>
+        <td> ST/G	</td>
+        <td> BC-A/B	</td>
+        <td> BC-A/</td>
+        <td> BC-B/B</td>
+        <td> BC-B/G</td>
+        <td> BC-C/B</td>
+        <td> BC-C/G</td>
+        <td> BC-D/B</td>
+        <td> BC-D/G</td>
+        <td> BC-E/B</td>
+        <td> BC-E/G</td>
+        
+      </tr>
+        
+
+     
+
+
+		<tr *ngFor = "let list of (colleges|ranksort : Query)" >
+			<td>{{list.FIELD1}}</td>
+			<td>{{list.FIELD2}}</td>
+			<td>{{list.FIELD3}}</td>
+			<td>{{list.FIELD4}}</td>
+			<td>{{list.FIELD5}}</td>
+			<td>{{list.FIELD6}}</td>
+			<td>{{list.FIELD7}}</td>
+			<td>{{list.FIELD8}}</td>
+			<td>{{list.FIELD9}}</td>
+			<td>{{list.FIELD10}}</td>
+			<td>{{list.FIELD11}}</td>
+			<td>{{list.FIELD12}}</td>
+			<td>{{list.FIELD13}}</td>
+			<td>{{list.FIELD14}}</td>
+			<td>{{list.FIELD15}}</td>
+			<td>{{list.FIELD16}}</td>
+			<td>{{list.FIELD17}}</td>
+			<td>{{list.FIELD18}}</td>
+      
+		</tr>
+    </tbody>
+  </table>
+</div>               

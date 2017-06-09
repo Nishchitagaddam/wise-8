@@ -1,0 +1,10 @@
+<a [routerLink] = "['/listings']"></a>
+<form (submit)="onAddSubmit">
+<div class="form-group">
+  <label>CollegeName</label>
+  <input class="form-control" id = "college" type ="text" [(ngModel)]="college" name ="college" required>
+  <label>Review</label>
+   <input class="form-control" id = "review" type ="text" [(ngModel)]="review" name ="review" required>
+</div>
+<input type = "submit" (click) = "onAddSubmit()" value="submit" class="btn btn-success">
+</form>
